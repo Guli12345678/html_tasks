@@ -11,13 +11,14 @@
         padding: 50px;
         background-color: #ffe6f0;
       }
+      .form {
+        width: 40%;
+        margin: 20px auto;
+      }
       .container {
-        background-color: #f8d9e6;
-        border-radius: 12px;
-        padding: 20px;
-        margin: 20px;
-        width: 80%;
-        box-shadow: 0 4px 8px rgba(255, 182, 193, 0.4);
+        max-width: 600px;
+        width: 100%;
+        margin: 20px auto;
       }
       a {
         color: #c94f7c;
@@ -30,6 +31,24 @@
       }
       h3 {
         color: #d16ba5;
+      }
+      .btn {
+        width: 30%;
+        height: 30px;
+        border: none;
+        background: green;
+        color: white;
+        text-transform: uppercase;
+      }
+      .inp {
+        width: 40%;
+        height: 30px;
+        border: none;
+        background: rgb(201, 200, 200);
+        display: block;
+        margin: 20px auto;
+        text-indent: 12px;
+        outline: none;
       }
     </style>
   </head>
@@ -58,8 +77,10 @@
       </ul>
     </div>
 
-    <input type="email" placeholder="Enter your email" />
-    <input type="password" placeholder="Enter your password" />
-    <button type="submit">Subscribe</button>
+    <form class="form" action="#" method="post">
+      <input class="inp" type="email" placeholder="Enter your email" />
+      <input class="inp" type="password" placeholder="Enter your password" />
+      <button class="btn" type="submit">Subscribe</button>
+    </form>
   </body>
 </html>
